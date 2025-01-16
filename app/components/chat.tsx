@@ -205,6 +205,7 @@ const Chat = ({
 			if (event.event === "thread.run.requires_action")
 				handleRequiresAction(event);
 			if (event.event === "thread.run.completed") handleRunCompleted();
+			if (event.event === "thread.message.completed") handleRunCompleted();
 			console.log("event -----", event.event);
 		});
 	};
